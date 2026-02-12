@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding-top: 90px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1e1e2f;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-left h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.nav-search input {
+    height: 40px;
+    width: 260px;
+    padding: 0 12px;
+    border: none;
+    outline: none;
+    border-radius: 6px 0 0 6px;
+    font-size: 14px;
+    border-right: 1px solid #ddd;
+}
+
+.nav-search button {
+    height: 40px;
+    padding: 0 18px;
+    border: none;
+    background: #6c7cff;
+    color: white;
+    font-size: 14px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.nav-search button:hover {
+    background: #5a69e0;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+
+.logout-btn {
+    background: #667eea;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-section {
+    margin-top: 40px;
+    padding: 0 40px;
+}
+
+.search-section h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.post-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+}
+
+.post-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.post-row::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.post {
+    min-width: 280px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
